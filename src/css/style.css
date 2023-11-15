@@ -114,6 +114,49 @@ section{
     font-weight: 400;
     line-height: 23px;
 }
+
+.container .profile-data .info .followers-following{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.container .profile-data .info .followers-following h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.container .profile-data .info .followers-following ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .profile-data .info .followers-following ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .profile-data .info .followers-following ul li .number{
+    border: 1px solid #24292e;
+    padding: 18px;
+    border-radius: 7px;
+}
+
+.container .profile-data .info .followers-following ul li .number:hover{
+    cursor: pointer;
+    background-color: #d87093;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.container .profile-data .info .followers-following ul li .fallowers,
+.container .profile-data .info .followers-following ul li .fallowing{
+    padding-top: 10px;
+    font-size: 15px;
+}
+
   
 /* REPOSITORIES */
   
