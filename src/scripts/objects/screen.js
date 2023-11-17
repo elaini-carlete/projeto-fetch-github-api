@@ -30,6 +30,22 @@ const screen = {
                                                 <h2>Repositórios</h2>
                                                 <ul>${repositoriesItens}</ul>
                                            </div>`
+        } this.renderEvents(user.events)
+    },
+    renderEvents(events){
+    let eventsItens = ''
+
+        events.forEach( (event) => { 
+            if(event.payload.commits){
+                eventsItens += `<li><a href="${event.html_url}" target="_blank"><span class="repo-name">${event.repo.name}</span> -> ${event.payload.commits[0].message}</a></li>`
+            }
+        })
+
+        if(events.length > 0){
+            this.userProfile.innerHTML += `<div class="events section">
+                                                <h2>Eventos</h2>
+                                                <ul>${eventsItens}</ul>
+                                           </div>`
         }
     },
     renderNotFound(){
