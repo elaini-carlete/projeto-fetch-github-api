@@ -141,7 +141,7 @@ section{
 }
 
 .container .profile-data .info .followers-following ul li .number{
-    border: 1px solid #24292e;
+    border: 1px solid gray;
     padding: 18px;
     border-radius: 7px;
     transition: 0.3s ease-in-out;
@@ -190,6 +190,17 @@ section{
   
 .container .profile-data.hide{
     display: none;
+}
+
+/* REPOSITORIIES INFO */
+.repositories-info{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.repositories-info li{
+    padding: 2px 15px;
 }
 
 /* EVENTS */
