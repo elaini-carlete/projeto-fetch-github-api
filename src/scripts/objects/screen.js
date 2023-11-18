@@ -49,7 +49,7 @@ const screen = {
 
         events.forEach( (event) => { 
             if(event.payload.commits){
-                eventsItens += `<li><a href="${event.html_url}" target="_blank"><span class="repo-name">${event.repo.name}</span> -> ${event.payload.commits[0].message}</a></li>`
+                eventsItens += `<li><a href="#"><span class="repo-name">${event.repo.name}</span> -> ${event.payload.commits[0].message}</a></li>`
             }
         })
 

@@ -11,7 +11,7 @@ main{
     display: flex;  
     justify-content: center;
     flex-direction: column;
-    padding: 50px 0 0;      
+    padding: 50px 0 0;
 }
 
 .devicon-github-original{
@@ -27,7 +27,7 @@ section{
 .container{
     width: 60%;
     max-width: 960px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
+    box-shadow: #d87093 0px 0px 30px 5px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -162,18 +162,21 @@ section{
   
 /* REPOSITORIES */
   
-.container .profile-data .repositories h2{
+.container .profile-data .repositories h2,
+.container .profile-data .events h2{
     margin-bottom: 30px;
     text-align: center;
 }
   
-.container .profile-data .repositories ul{
+.container .profile-data .repositories ul,
+.container .profile-data .events ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
   
-.container .profile-data .repositories ul li a{
+.container .profile-data .repositories ul li a,
+.container .profile-data .events ul li a{
     padding: 20px;
     border: 1px solid grey;  
     margin: 20px;
@@ -182,7 +185,8 @@ section{
     transition: 0.3s ease-in-out;
 }
   
-.container .profile-data .repositories ul li a:hover{
+.container .profile-data .repositories ul li a:hover,
+.container .profile-data .events ul li a:hover{
     background-color:#d87093;
     border: 1px solid #fff;
     color: #fff;
@@ -207,29 +211,6 @@ section{
 
 .container .profile-data .events h2{
     margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-  
-.container .profile-data .events ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.container .profile-data .events ul li a{
-    padding: 20px;
-    border: 1px solid grey;  
-    margin: 20px;
-    display: block;
-    border-radius: 7px;
-    transition: 0.3s ease-in-out;
-}
-  
-.container .profile-data .events ul li a:hover{
-    background-color:#d87093;
-    border: 1px solid #fff;
-    color: #fff;
 }
 
 .container .profile-data .events ul li a .repo-name{

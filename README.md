@@ -27,4 +27,4 @@ Projeto realizado em uma quest no curso Dev Quester
 
 ### Status - Desktop
 
-![](./design/status-desktop.png)
+![](./design/api-github-desktop-status.gif)
